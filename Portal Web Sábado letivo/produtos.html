@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">🐾 PetShop Amigo Animal</div>
+            <ul class="nav-menu">
+                <li><a href="#racao">Rações</a></li>
+                <li><a href="#brinquedos">Brinquedos</a></li>
+                <li><a href="#banhos">Banhos</a></li>
+                <li><a href="#remedios">Remédios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="racao" class="categoria">
+            <h2>🍖 Rações Premium</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=300&h=300&fit=crop" alt="Ração Premium para Cães" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Royal Canin Adulto</h3>
+                        <p class="descricao">Ração seca para cães adultos - 15kg</p>
+                        <p class="preco">R$ 189,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Royal Canin Adulto', 189.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=300&h=300&fit=crop" alt="Ração Premium para Gatos" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Whiskas Premium</h3>
+                        <p class="descricao">Ração úmida para gatos - Pacote com 12</p>
+                        <p class="preco">R$ 79,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Whiskas Premium', 79.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop" alt="Ração Natural" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Natural Balance</h3>
+                        <p class="descricao">Ração natural para cães filhotes - 2kg</p>
+                        <p class="preco">R$ 129,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Natural Balance', 129.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brinquedos" class="categoria">
+            <h2>🎾 Brinquedos Divertidos</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=300&h=300&fit=crop" alt="Bola Interativa" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Bola Sonora</h3>
+                        <p class="descricao">Bola interativa com apito para cães</p>
+                        <p class="preco">R$ 29,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Bola Sonora', 29.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=300&h=300&fit=crop" alt="Arranhador para Gatos" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Arranhador Premium</h3>
+                        <p class="descricao">Arranhador com plataformas para gatos</p>
+                        <p class="preco">R$ 159,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Arranhador Premium', 159.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=300&h=300&fit=crop" alt="Mordedor Dental" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Mordedor Dental</h3>
+                        <p class="descricao">Brinquedo dental para limpeza dos dentes</p>
+                        <p class="preco">R$ 19,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Mordedor Dental', 19.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banhos" class="categoria">
+            <h2>🛁 Banho & Tosa</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=300&h=300&fit=crop" alt="Banho Simples" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Banho Simples</h3>
+                        <p class="descricao">Banho com shampoo neutro e secagem</p>
+                        <p class="preco">R$ 49,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Banho Simples', 49.90)">Agendar Banho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop" alt="Banho Premium" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Banho Premium</h3>
+                        <p class="descricao">Banho com produtos importados e tosa</p>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Banho Premium', 89.90)">Agendar Banho</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?w=300&h=300&fit=crop" alt="Pacote Mensal" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Pacote Mensal</h3>
+                        <p class="descricao">4 banhos simples por mês</p>
+                        <p class="preco">R$ 169,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Pacote Mensal', 169.90)">Assinar Plano</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="remedios" class="categoria">
+            <h2>💊 Remédios Essenciais</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop" alt="Antipulgas" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Frontline Antipulgas</h3>
+                        <p class="descricao">Comprimido antipulgas para cães - 3 doses</p>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Frontline Antipulgas', 89.90)">Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=300&h=300&fit=crop" alt="Antibiótico" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Baytril Antibiótico</h3>
+                        <p class="descricao">Antibiótico veterinário - 10 comprimidos</p>
+                        <p class="preco">R$ 120,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Baytril Antibiótico', 120.90)">Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=300&h=300&fit=crop" alt="Vitamina" class="produto-img">
+                    <div class="produto-info">
+                        <h3>Multivitamínico Pet</h3>
+                        <p class="descricao">Suplemento vitamínico completo - 60 cápsulas</p>
+                        <p class="preco">R$ 59,90</p>
+                        <button class="btn-comprar" onclick="adicionarAoCarrinho('Multivitamínico Pet', 59.90)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="carrinho-flutuante">
+        <button id="btn-carrinho" onclick="toggleCarrinho()">
+            🛒 Carrinho (<span id="contador-carrinho">0</span>)
+        </button>
+        <div id="carrinho-modal" class="carrinho-modal">
+            <div class="carrinho-conteudo">
+                <h3>Carrinho de Compras</h3>
+                <div id="itens-carrinho">Seu carrinho está vazio</div>
+                <div id="total-carrinho" class="total">Total: R$ 0,00</div>
+                <button class="btn-fechar" onclick="toggleCarrinho()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
