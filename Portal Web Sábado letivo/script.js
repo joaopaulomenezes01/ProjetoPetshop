@@ -1,9 +1,9 @@
-let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+let carrinho =  [];
 
 function atualizarContador() {
     document.getElementById('contador-carrinho').textContent = carrinho.length;
     atualizarCarrinhoModal();
-    salvarCarrinho();
+    
 }
 
 function adicionarAoCarrinho(nome, preco) {
@@ -16,7 +16,7 @@ function adicionarAoCarrinho(nome, preco) {
     carrinho.push(item);
     atualizarContador();
     
-    // Efeito visual rápido
+   
     const notification = document.createElement('div');
     notification.style.cssText = `
         position: fixed;
@@ -70,11 +70,8 @@ function toggleCarrinho() {
     modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
 }
 
-function salvarCarrinho() {
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-}
 
-// Inicializar
+
 document.addEventListener('DOMContentLoaded', () => {
     atualizarContador();
     
