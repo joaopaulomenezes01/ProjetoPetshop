@@ -70,6 +70,13 @@ body {
     color: #667eea;
 }
 
+#data-atual {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

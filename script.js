@@ -70,12 +70,23 @@ function toggleCarrinho() {
     modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
 }
 
+function exibirDataAtual() {
+    const dataAtual = new Date();
+    const opcoes = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dataFormatada = dataAtual.toLocaleDateString('pt-BR', opcoes);
+    const elementoData = document.getElementById('data-atual');
+    if (elementoData) {
+        elementoData.textContent = `Hoje é ${dataFormatada}`;
+    }
+}
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
     atualizarContador();
+    exibirDataAtual();
     
-    // Fechar modal quando clicar fora
+    
     document.addEventListener('click', (e) => {
         const modal = document.getElementById('carrinho-modal');
         const btnCarrinho = document.getElementById('btn-carrinho');
